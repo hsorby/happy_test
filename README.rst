@@ -30,12 +30,12 @@ This is the output that I am looking for.
 Problem
 -------
 
-The problem that I have is that the `ExpressionPair` type appears in the `happy.py` file while I would like it to appear in the `projecttypes.py` file.
-On line 11 of `happy.i` I have decalared the following template::
+The problem that I have is that the **ExpressionPair** type appears in the **happy.py** file while I would like it to appear in the **projecttypes.py** file.
+On line 11 of **happy.i** I have decalared the following template::
 
   %template(ExpressionPair) std::pair<SmilePtr, SmilePtr>;
 
 Which works.
-However I get the `ExpressionPair` class defined in the `happy.py` file while what I want is for the `ExpressionPair` class to be defined in the `projecttypes.py` file.
-But, if I comment out line 11 in `happy.i` and instead define the template on line 15 of `projecttypes.i` I do not get the correct output that I get above.
+However I get the **ExpressionPair** class defined in the **happy.py** file while what I want is for the **ExpressionPair** class to be defined in the **projecttypes.py** file.
+But, if I comment out line 11 in **happy.i** and instead define the template on line 15 of **projecttypes.i** I do not get the correct output that I get above.
 
